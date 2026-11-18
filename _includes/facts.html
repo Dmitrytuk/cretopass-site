@@ -1,0 +1,7 @@
+    <div class="facts">
+      <div class="wrap facts-grid">
+        {% for fact in site.data.content.facts %}
+        <div class="fact"><strong>{{ fact.title }}</strong><span>{{ fact.desc }}</span></div>
+        {% endfor %}
+      </div>
+    </div>

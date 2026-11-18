@@ -1,0 +1,15 @@
+    <section id="install" class="wrap">
+      <div class="install-layout">
+        <div class="install-copy">
+          <div class="kicker">{{ site.data.content.install.kicker }}</div>
+          <h2>{{ site.data.content.install.title }}</h2>
+          <p>{{ site.data.content.install.desc }}</p>
+          <p style="font-size:12px">{{ site.data.content.install.note }}</p>
+        </div>
+        <div class="code-list">
+          {% for method in site.data.content.install.methods %}
+          <div class="code-item"><div class="code-label">{{ method.label }}</div><div class="code-line"><code>{{ method.command }}</code><button class="copy" data-copy="{{ method.command }}">COPY</button></div></div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,11 @@
+    <section id="features" class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">{{ site.data.content.features.kicker }}</div><h2>{{ site.data.content.features.title }}</h2></div>
+        <p class="section-note">{{ site.data.content.features.note }}</p>
+      </div>
+      <div class="feature-grid">
+        {% for item in site.data.content.features.items %}
+        <article class="feature"><div class="feature-icon">{{ item.icon }}</div><h3>{{ item.title }}</h3><p>{{ item.desc }}</p></article>
+        {% endfor %}
+      </div>
+    </section>

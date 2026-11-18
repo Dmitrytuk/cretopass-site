@@ -1,0 +1,106 @@
+meta:
+  theme_color: "#101310"
+  description: "cretopass — a local terminal password manager. One age-encrypted file. No accounts, cloud, or network required."
+  title: "cretopass — secrets, kept local"
+  og_image: "assets/img/app-icon.png"
+
+nav:
+  brand: "cretopass"
+  brand_aria: "cretopass, to home"
+  nav_aria: "Main navigation"
+  links:
+    - text: "Features"
+      href: "#features"
+    - text: "Security"
+      href: "#security"
+    - text: "Install"
+      href: "#install"
+  github:
+    text: "GitHub ↗"
+    href: "https://github.com/Dmitrytuk/cretopass"
+
+hero:
+  eyebrow: "terminal password manager"
+  title: "Secrets.<br><span>Yours alone.</span>"
+  lead: "A password manager in your terminal. Keep an organized collection of secrets in one encrypted file — no account, cloud, or network connection required."
+  cta_primary:
+    text: "Install ↗"
+    href: "#install"
+  cta_secondary:
+    text: "Source code ↗"
+    href: "https://github.com/Dmitrytuk/cretopass"
+  micro: "OPEN SOURCE · RUST · MIT LICENSE"
+  terminal_aria: "Example of cretopass interface in terminal"
+  terminal_img: "assets/img/demo.gif"
+  terminal_alt: "cretopass terminal demo"
+
+facts:
+  - title: "One file"
+    desc: "all secrets in one vault"
+  - title: "Local"
+    desc: "no cloud or account"
+  - title: "age + scrypt"
+    desc: "vault encryption"
+  - title: "Rust"
+    desc: "terminal interface"
+
+features:
+  kicker: "01 / features"
+  title: "No clutter.<br>Just the essentials."
+  note: "Organize secrets in a tree. Store more than passwords — keep any information you want to manage locally."
+  items:
+    - icon: "⌘"
+      title: "Terminal interface"
+      desc: "Navigate with Vim-style keys and access your entries without leaving the terminal."
+    - icon: "⌕"
+      title: "Search and copy"
+      desc: "Find entries and copy individual fields to your clipboard when you need them."
+    - icon: "＋"
+      title: "Custom fields"
+      desc: "Create entries with custom fields — not just usernames and passwords."
+    - icon: "⤨"
+      title: "Secret tree"
+      desc: "Group entries by project, service, or any structure that works for you."
+    - icon: "✳"
+      title: "Generator"
+      desc: "Generate usernames and passwords right inside the application."
+    - icon: "⌁"
+      title: "Your file"
+      desc: "Choose the vault location yourself and decide where your data lives."
+
+security:
+  kicker: "02 / security"
+  title: "Your data stays<br>with you."
+  desc: "cretopass does not connect to servers or sync data over the internet. Your vault is encrypted; without its passphrase, the file remains ciphertext."
+  items:
+    - title: "age encryption"
+      desc: "The vault file is protected using age and a passphrase."
+    - title: "scrypt key derivation"
+      desc: "The passphrase is processed using scrypt."
+    - title: "No network requests"
+      desc: "The application requires no account, cloud service, or network connection."
+    - title: "Clipboard control"
+      desc: "A field is copied to the clipboard only after an explicit user action."
+
+install:
+  kicker: "03 / installation"
+  title: "Getting started."
+  desc: "Choose an installation method for Linux, macOS, Windows, or Cargo."
+  note: "After installation, open your terminal and run <code>cretopass</code>."
+  methods:
+    - label: "Linux / macOS"
+      command: "curl -fsSL https://github.com/Dmitrytuk/cretopass/releases/latest/download/install.sh | sh"
+    - label: "Windows · PowerShell"
+      command: "irm https://github.com/Dmitrytuk/cretopass/releases/latest/download/install.ps1 | iex"
+    - label: "Cargo"
+      command: "cargo install cretopass"
+
+footer:
+  copyright: "© cretopass · MIT License"
+  links:
+    - text: "GitHub ↗"
+      href: "https://github.com/Dmitrytuk/cretopass"
+    - text: "Issues ↗"
+      href: "https://github.com/Dmitrytuk/cretopass/issues"
+    - text: "Security ↗"
+      href: "https://github.com/Dmitrytuk/cretopass/blob/master/SECURITY.md"

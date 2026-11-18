@@ -1,0 +1,14 @@
+    <section id="security" class="security">
+      <div class="wrap security-layout">
+        <div class="security-copy">
+          <div class="kicker">{{ site.data.content.security.kicker }}</div>
+          <h2>{{ site.data.content.security.title }}</h2>
+          <p>{{ site.data.content.security.desc }}</p>
+        </div>
+        <div class="security-list">
+          {% for item in site.data.content.security.items %}
+          <div class="security-row"><div class="number">{{ forloop.index01 }}</div><div><strong>{{ item.title }}</strong><span>{{ item.desc }}</span></div></div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
