@@ -1,0 +1,67 @@
+title: cretopass
+tagline: A tree of secrets in the terminal. One file. No network.
+description: >-
+  cretopass is an offline terminal password manager: a TUI written in Rust over
+  one age-encrypted file. You choose the file. The binary makes no network
+  calls.
+url: "https://cretopass.app"
+baseurl: ""
+lang: en
+author: Dmitry Ivanov
+repo: "https://github.com/Dmitrytuk/cretopass"
+issues: "https://github.com/Dmitrytuk/cretopass/issues"
+security_advisories: "https://github.com/Dmitrytuk/cretopass/security/advisories/new"
+license: MIT
+version: "1.1.2"
+timezone: UTC
+image: /assets/img/demo.png
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+permalink: /:collection/:name/
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:name/
+  articles:
+    output: true
+    permalink: /writing/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: doc
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path: /feed.xml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor
+  - .bundle
+  - node_modules
+  - scripts
+
+sass:
+  style: compressed

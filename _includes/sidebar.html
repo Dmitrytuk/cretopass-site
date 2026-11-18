@@ -1,0 +1,17 @@
+<nav class="sidebar" aria-label="Documentation">
+  {% for group in site.data.docs_nav.sections %}
+  {% assign items = site.docs | where: "section", group.title | sort: "nav_order" %}
+  {% if items.size > 0 %}
+  <div class="group">
+    <p class="group-title">{{ group.title }}</p>
+    <ul>
+      {% for item in items %}
+      <li>
+        <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="is-active" aria-current="page"{% endif %}>{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  {% endfor %}
+</nav>
