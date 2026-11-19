@@ -1,3 +1,6 @@
 title: cretopass
 description: "a local terminal password manager"
-url: ""
+url: "https://cretopass.app"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
