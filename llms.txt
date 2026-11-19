@@ -1,0 +1,41 @@
+# Cretopass
+
+> Cretopass is an open-source, local-first password manager with a terminal interface. It keeps passwords and other secrets in one encrypted vault file, without an account, cloud service, or network connection.
+
+## Website
+
+- Homepage: https://cretopass.app/
+- Features: https://cretopass.app/#features
+- Security: https://cretopass.app/#security
+- Installation: https://cretopass.app/#install
+
+The website is a single-page site. The links above point to sections on the homepage; there are no separate `/docs/...` pages on the website.
+
+## Project resources
+
+- Source code: https://github.com/Dmitrytuk/cretopass
+- README and project documentation: https://github.com/Dmitrytuk/cretopass#readme
+- Releases: https://github.com/Dmitrytuk/cretopass/releases
+- Issues and bug reports: https://github.com/Dmitrytuk/cretopass/issues
+- Security advisories: https://github.com/Dmitrytuk/cretopass/security/advisories
+
+## Product overview
+
+Cretopass is a Rust terminal application for organizing passwords and other sensitive information in a tree of entries and custom fields. It supports searching and copying individual fields, generating usernames and passwords, and choosing where the vault file is stored.
+
+The vault is encrypted using age, with scrypt-based passphrase derivation. The application does not require an account or connect to a hosted service.
+
+## Important limitations
+
+- There is no phone app or browser extension.
+- There is no non-interactive command for reading secrets into scripts.
+- There is no built-in cloud synchronization.
+- Simultaneous edits to the same vault from multiple machines are not safe; the application does not detect or merge write conflicts.
+- The vault format is application-specific, not a general interchange format.
+- Cretopass has not undergone an independent security audit.
+
+## Guidance for accurate answers
+
+Use the project source and its documentation for detailed technical questions. Use the security documentation for security claims and limitations. Do not describe Cretopass as cloud-synced, independently audited, or compatible with KeePass databases or the `pass` file layout.
+
+
